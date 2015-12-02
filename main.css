@@ -1,0 +1,306 @@
+html, body {
+    overflow: hidden; /* nema scrollanja sinek */
+}
+
+body {
+    /* micanje margina */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    width: 100%;
+    position: absolute;
+    z-index: 500000;
+}
+
+#header ul {
+    list-style: none;
+    margin: 40px 20px 20px 20px;
+    font-family: Arial, sans-serif;
+    padding: 0 10px;
+    float: right;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#header ul li {
+    float: left;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.light .current {
+    background: #000;
+    border-radius: 5px;
+}
+
+.dark .current {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.dark h1 a, .dark ul li a {
+    color: #000;
+}
+.light h1 a, .light ul li a {
+    color: #fff;
+}
+
+#header h1 a{
+    padding: 0 0 0 20px;
+    font-family: 'Bree Serif', Georgia, serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 20px 0 0 0;
+    float: left;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.posit-g {
+    position: relative;
+    right: 15px;
+    top: 4px;
+    float: left;
+}
+
+.is {
+    font-family: 'Bree Serif', Georgia, serif;
+    font-size: 3.5em;
+    position: relative;
+    display: inline-block;
+    left: 365px;
+    top: 20px;
+    color: #fff;
+}
+
+.content {
+    position: relative;
+    top: 130px;
+}
+
+
+/* ----- HOME ----- */
+
+#home {
+    background-color: dimgray;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /*box-shadow: inset 0 50px 600px #59C1D9, 0px 0px 60px rgba(0, 0, 0, 0.4);
+    */
+    position: relative;
+    z-index: 500;
+}
+
+
+
+/* ----- three ----- */
+
+/* The background */
+#three {
+    background-color: grey;
+    background-size:cover;
+    background-repeat: no-repeat;
+   /* box-shadow: inset 0 50px 600px #59C1D9, 0px 0px 60px rgba(0, 0, 0, 0.4);
+    */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* sadržaj */
+#three .content {
+    margin: 20px 0 0 20px;
+    color: #fff;
+    width: 420px;
+    top: 0;
+    font-family: 'Bree Serif', Georgia, serif;
+}
+
+/* Text uređivanje */
+#three .content h2 {
+    font-size: 3em;
+    font-weight: lighter;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    margin: 5px 0;
+}
+
+#three .content p {
+    position: relative;
+}
+
+#three .content p span {
+    display: block;
+    font-size: 3.7em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#three .content p span.amp {
+    display: inline;
+    font-size: 1em;
+    color: #f38e4a;
+}
+
+/* Line break */
+#three hr {
+    border: 0;
+    border-bottom: 10px solid #000;
+    width: 413px;
+    margin: 20px 0;
+}
+
+
+/* ----- twu ----- */
+
+#two {
+    background-color: #c0c0c0;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+#two .content {
+    width: 80%;
+    margin: 0px auto;
+}
+
+#two .content div {
+    background-color: #f2fce1;
+    border: 2px solid #b3e361;
+    border-radius: 8px;
+    width: 30%;
+    height: 400px;
+    padding: 3%;
+    height: 60%;
+    float: left;
+    /* Border-box so borders dont affect width */
+    box-sizing: border-box;
+    margin-right: 3%;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+
+#two .content .box-2 {
+    position: relative;
+    z-index: 500;
+}
+#two .content a {
+    width: 100%;
+    background-color: #2caccb;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    display: block;
+    box-shadow: inset 0 10px 20px rgba(255,255,255,0.2);
+
+}
+
+#two .content a:hover {
+    box-shadow: inset 0 -10px 20px rgba(255,255,255,0.2);
+}
+
+#two a:active {
+    box-shadow: inset 0 -10px 20px rgba(255,255,255,0.2), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#two .content h2 {
+    margin: 0; padding: 0 0 10px 0;
+    border-bottom: 5px solid #e2ead0;
+    font-family: 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    font-variant: normal;
+}
+
+#two .content p {
+    line-height: 20px;
+    font-size: 0.9em;
+    text-align: justify;
+    color: #656565;
+    text-decoration: none;
+}
+
+
+/* ----- four ----- */
+
+#four {
+    background-color: #0f0f0f;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* prilagodba za male ekrane */
+@media (max-width: 960px) {
+    .content { top: 160px !important; }
+    #about .content { margin: 0px auto; }
+    .is { display: none; }
+    #header h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    #header ul {
+        float: none;
+        margin: 0px auto;
+        width: 380px;
+        top: 10px;
+    }
+    #header ul li { padding-left: 0; }
+    #header ul li:last-of-type { padding-right: 0; }
+    #contact .form { padding: 4%; }
+    #contact .form div { width: 100%; }
+    #contact .form div input { width: 80%; }
+    #event .content { width: 95%; }
+    #event .content div {
+        margin: 0 2% 0 0;
+        width: 31%;
+    }
+}
+
+/* za mobitele */
+@media (max-width: 700px) {
+    .content { top: 130px !important; }
+    #header h1 { font-size: 2.2em;	 }
+    #header ul {
+        position: relative;
+        top: 10px;
+        width: 300px;
+        margin: 0px auto;
+        font-size: 0.7em;
+    }
+    #two .content {
+        width: 100%;
+        float: left;
+    }
+    #three .content { width: 100%; }
+    #three .content h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    #three .content p span {
+        font-size: 2.6em;
+        text-align: center;
+    }
+    #three .content hr { display: none; }
+    #two .box-1, #timer .box-3 { display: none; }
+    #two .content .box-2 {
+        width: 80%;
+        margin: 0px auto;
+        float: none;
+    }
+
+}
